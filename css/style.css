@@ -1,0 +1,364 @@
+* {font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    color: #004aad;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1f 1fr 1fr; 
+    grid-template-rows: 0.05fr 1.5fr 1fr 0.1fr;
+    grid-template-areas: 
+    "header     header      header"
+    "main       main        main"   
+    "aside      aside       aside"
+    "footer     footer      footer"
+    ;
+}
+
+
+.menu-bar {
+    background-color: hwb(214 7% 48%);
+    display: flex;
+    grid-area: header;
+}
+
+.container-menu {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    height: 80px;
+    width: 120px;
+    margin-left: 30px;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.bar-items {
+    display: flex;
+ }
+
+.bar-items li {
+    display: flex;
+    list-style: none;
+    margin: 15px;
+}
+
+.bar-items li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: bold ;
+    font-weight: 400;
+    color: white;
+}
+
+.homebanner-img {
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+} 
+
+.container-one {
+    background-color: #d9d9d6 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homebanner {
+    background-color: hwb(214 7% 48%);
+    display: flex;
+}
+
+.homebanner h1 {
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.homebanner p {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.banner-titleone {
+    background-color: hwb(214 7% 48%);
+    text-align: center;
+
+}
+
+
+.banner-titleone h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.banner-titleone p {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.banner-titletwo {
+    font-size: 20px;
+    color: hwb(214 7% 48%);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+ }
+
+
+ .banner-paragraph {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+
+ section div p {
+    font-size: 25px;
+    color: hwb(214 7% 48%);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+ }
+
+ section div h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: hwb(214 7% 48%);
+    text-align: center;
+    margin-top: 40px;
+ }
+
+ .container-two {
+    display: grid;
+    background-color: white;
+    margin-top: 50px;
+ }
+
+ .container-two img {
+    width: 290px;
+    height: 270px;
+    border-radius: 20px;
+    margin-top: 15px;
+ }
+
+ .container-two h3 {
+    display: grid;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-two p {
+    display: grid;
+    font-size: 30px;
+    text-align: center;
+}
+
+.porquenosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.container-twoimguno {
+    width: 20em;
+    height: 550px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: hwb(214 7% 48%);
+}
+
+.porquenosotros h4  {
+    color: beige;
+    font-weight: bolder ;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.porquenosotros p  {
+    font-size: 17px;
+    color: beige;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.container-twoimgtwo {
+    width: 20em;
+    height: 550px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #124485;
+}
+
+.container-twoimgthree {
+    width: 20em;
+    height: 550px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: hwb(214 7% 48%);
+}
+
+
+.porquenosotros button {
+    background-color: #d9d9d6;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+aside {
+    display: grid;
+    grid-area: aside;
+ } 
+
+aside section div {
+    display: flex;
+
+ }
+
+ .container-novedades {
+    background-color: #d9d9d6;
+ }
+
+ .container-novedades h3 {
+    display: grid;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-novedades p {
+    display: grid;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ .container-novedades img {
+    width: 100%
+ }
+
+ 
+ .container-novedadesactuales {
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px 100px 300px
+}
+
+footer {
+    grid-area: footer;
+    background-color: #124485;
+}
+
+ .contenedor-pie {
+    display: flex;
+    width: 100%;
+    background-color: #124485;
+    align-items: center;
+ }
+
+ .logo-pie {
+   display: flex;
+   height: 80px;
+   width: 120px;
+   margin-left: 30px;
+}
+
+ .contenedor-pie p {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    }
+
+    /* EXAMENES */ 
+ 
+.grid-containerexamenes  {
+    display: grid;
+    grid-template-columns: 1f 1fr 1fr; 
+    grid-template-rows: 0.05fr 1.7fr 0.1fr;
+    grid-template-areas: 
+    "header     header      header"
+    "main       main        main"   
+    "footer     footer      footer"
+    ;
+}
+
+.examenesheadline {
+    display: grid;
+    background-color: #d9d9d6;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.exams {
+    margin-top: 40px;
+}
+
+.exams h2 {
+    display: grid;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+  }
+    
+.exams img {
+    width: 100% ;
+}
+
+.exams p {
+    display: grid;
+    font-size: 30px;
+    text-align: center; }
+
+.exams button {
+    display: flex;
+    background-color: #d9d9d6;
+    padding: 20px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+    
+}
